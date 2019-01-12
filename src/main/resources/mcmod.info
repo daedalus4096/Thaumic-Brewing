@@ -1,0 +1,16 @@
+[
+{
+  "modid": "thaumic-brewing",
+  "name": "Thaumic Brewing",
+  "description": "Simple learning mod",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Verdus"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
