@@ -10,6 +10,17 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle.forge'
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 
+repositories {
+    mavenCentral()
+    maven {
+        name = "CurseForge"
+        url = "https://minecraft.curseforge.com/api/maven/"
+    }
+    maven {
+        name = "thiakil"
+        url = "http://maven.thiakil.com"
+    }
+}
 
 version = "0.0.1"
 group = "com.verdantartifice.thaumic-brewing" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
@@ -34,6 +45,9 @@ minecraft {
 }
 
 dependencies {
+    deobfCompile "com.azanor.baubles:Baubles:1.12-1.5.2"
+    deobfCompile "thaumcraft:Thaumcraft:1.12.2:6.1.BETA26"
+
     // you may put jars on which you depend on in ./libs
     // or you may define them like so..
     //compile "some.group:artifact:version:classifier"
