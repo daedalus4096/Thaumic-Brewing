@@ -1,0 +1,27 @@
+{
+    "entries": [
+        {
+            "key": "TBREW_HEALING_POTION",
+            "name": "thaumicbrewing.research.healing_potion.title",
+            "icons": ["minecraft:textures/items/potion_bottle_splash.png"],
+            "category": "THAUMIC_BREWING",
+            "parents": ["UNLOCKALCHEMY"],
+            "siblings": [],
+            "meta": ["ROUND"],
+            "location": [0, 0],
+            "reward_item": [],
+            "reward_knowledge": [],
+            "stages": [
+                {
+                    "text": "thaumicbrewing.research.healing_potion.text.stage.1",
+                    "required_item": ["minecraft:stick"]
+                },
+                {
+                    "text": "thaumicbrewing.research.healing_potion.text.stage.2"
+                    /* "recipes": ["thaumicbrewing:healing_potion"] */
+                }
+            ],
+            "addenda": []
+        }
+    ]
+}

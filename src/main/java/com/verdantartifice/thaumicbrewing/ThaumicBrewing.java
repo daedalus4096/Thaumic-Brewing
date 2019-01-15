@@ -1,10 +1,15 @@
 package com.verdantartifice.thaumicbrewing;
 
-import net.minecraft.init.Blocks;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import thaumcraft.api.ThaumcraftApi;
+import thaumcraft.api.aspects.AspectList;
+import thaumcraft.api.research.ResearchCategories;
+import thaumcraft.api.research.ResearchCategory;
+
 import org.apache.logging.log4j.Logger;
 
 @Mod(modid = ThaumicBrewing.MODID, name = ThaumicBrewing.NAME, version = ThaumicBrewing.VERSION, dependencies = ThaumicBrewing.DEPENDENCIES)
@@ -26,7 +31,7 @@ public class ThaumicBrewing
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-        // some example code
-        logger.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+        ResearchCategories.registerCategory("THAUMIC_BREWING", "UNLOCKALCHEMY", new AspectList(), new ResourceLocation("minecraft","textures/items/potion_bottle_drinkable.png"), new ResourceLocation("thaumcraft", "textures/gui/gui_research_back_1.jpg"), new ResourceLocation("thaumcraft", "textures/gui/gui_research_back_over.png"));
+        ThaumcraftApi.registerResearchLocation(new ResourceLocation("thaumicbrewing", "research/potions" ));
     }
 }

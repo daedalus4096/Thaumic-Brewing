@@ -1,0 +1,6 @@
+// Research
+tc.research_category.THAUMIC_BREWING=Thaumic Brewing
+
+thaumicbrewing.research.healing_potion.title=Das Healz
+thaumicbrewing.research.healing_potion.text.stage.1=This will be some really cool text when it's not a placeholder.
+thaumicbrewing.research.healing_potion.text.stage.2=Success!
