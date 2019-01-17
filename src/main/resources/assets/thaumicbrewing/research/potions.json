@@ -17,8 +17,8 @@
                     "required_item": ["minecraft:stick"]
                 },
                 {
-                    "text": "thaumicbrewing.research.healing_potion.text.stage.2"
-                    /* "recipes": ["thaumicbrewing:healing_potion"] */
+                    "text": "thaumicbrewing.research.healing_potion.text.stage.2",
+                    "recipes": ["thaumicbrewing:healing_potion"]
                 }
             ],
             "addenda": []
