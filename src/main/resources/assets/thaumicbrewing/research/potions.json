@@ -1,9 +1,9 @@
 {
     "entries": [
         {
-            "key": "TBREW_HEALING_POTION",
-            "name": "thaumicbrewing.research.healing_potion.title",
-            "icons": ["minecraft:textures/items/potion_bottle_splash.png"],
+            "key": "TBREW_BASE",
+            "name": "thaumicbrewing.research.base.title",
+            "icons": ["minecraft:textures/items/brewing_stand.png"],
             "category": "THAUMIC_BREWING",
             "parents": ["UNLOCKALCHEMY"],
             "siblings": [],
@@ -13,8 +13,26 @@
             "reward_knowledge": [],
             "stages": [
                 {
+                    "text": "thaumicbrewing.research.base.text.stage.1"
+                }
+            ],
+            "addenda": []
+        },
+        {
+            "key": "TBREW_HEALING_POTION",
+            "name": "thaumicbrewing.research.healing_potion.title",
+            "icons": ["minecraft:textures/items/potion_bottle_drinkable.png"],
+            "category": "THAUMIC_BREWING",
+            "parents": ["TBREW_BASE"],
+            "siblings": [],
+            "meta": [],
+            "location": [2, 0],
+            "reward_item": [],
+            "reward_knowledge": [],
+            "stages": [
+                {
                     "text": "thaumicbrewing.research.healing_potion.text.stage.1",
-                    "required_item": ["minecraft:stick"]
+                    "required_research": ["!alkimia"]
                 },
                 {
                     "text": "thaumicbrewing.research.healing_potion.text.stage.2",

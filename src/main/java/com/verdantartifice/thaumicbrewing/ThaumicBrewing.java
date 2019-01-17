@@ -21,7 +21,7 @@ public class ThaumicBrewing
     public void init(FMLInitializationEvent event)
     {
         ModRecipes.initializeRecipes();
-        ResearchCategories.registerCategory("THAUMIC_BREWING", "UNLOCKALCHEMY", new AspectList(), new ResourceLocation("minecraft","textures/items/potion_bottle_drinkable.png"), new ResourceLocation("thaumcraft", "textures/gui/gui_research_back_1.jpg"), new ResourceLocation("thaumcraft", "textures/gui/gui_research_back_over.png"));
+        ResearchCategories.registerCategory("THAUMIC_BREWING", "UNLOCKALCHEMY", new AspectList(), new ResourceLocation("minecraft","textures/items/brewing_stand.png"), new ResourceLocation("thaumcraft", "textures/gui/gui_research_back_1.jpg"), new ResourceLocation("thaumcraft", "textures/gui/gui_research_back_over.png"));
         ThaumcraftApi.registerResearchLocation(new ResourceLocation("thaumicbrewing", "research/potions" ));
     }
 }
