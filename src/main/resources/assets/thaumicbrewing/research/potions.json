@@ -19,8 +19,8 @@
             "addenda": []
         },
         {
-            "key": "TBREW_HEALING_POTION",
-            "name": "thaumicbrewing.research.healing_potion.title",
+            "key": "TBREW_BASIC_POTIONS",
+            "name": "thaumicbrewing.research.basic_potions.title",
             "icons": ["minecraft:textures/items/potion_bottle_drinkable.png"],
             "category": "THAUMIC_BREWING",
             "parents": ["TBREW_BASE"],
@@ -31,12 +31,27 @@
             "reward_knowledge": [],
             "stages": [
                 {
-                    "text": "thaumicbrewing.research.healing_potion.text.stage.1",
+                    "text": "thaumicbrewing.research.basic_potions.text.stage.1",
+                    "required_item": [
+                        "minecraft:potion;1;0;{Potion:'minecraft:night_vision'}",
+                        "minecraft:potion;1;0;{Potion:'minecraft:fire_resistance'}",
+                        "minecraft:potion;1;0;{Potion:'minecraft:swiftness'}",
+                        "minecraft:potion;1;0;{Potion:'minecraft:water_breathing'}",
+                        "minecraft:potion;1;0;{Potion:'minecraft:healing'}",
+                        "minecraft:potion;1;0;{Potion:'minecraft:strength'}"
+                    ],
                     "required_research": ["!alkimia"]
                 },
                 {
-                    "text": "thaumicbrewing.research.healing_potion.text.stage.2",
-                    "recipes": ["thaumicbrewing:healing_potion"]
+                    "text": "thaumicbrewing.research.basic_potions.text.stage.2",
+                    "recipes": [
+                        "thaumicbrewing:night_vision_potion",
+                        "thaumicbrewing:fire_resistance_potion",
+                        "thaumicbrewing:swiftness_potion",
+                        "thaumicbrewing:water_breathing_potion",
+                        "thaumicbrewing:healing_potion",
+                        "thaumicbrewing:strength_potion"
+                    ]
                 }
             ],
             "addenda": []

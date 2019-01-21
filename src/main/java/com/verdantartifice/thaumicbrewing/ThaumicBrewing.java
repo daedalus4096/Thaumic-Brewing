@@ -1,13 +1,17 @@
 package com.verdantartifice.thaumicbrewing;
 
+import org.apache.logging.log4j.Logger;
+
+import com.verdantartifice.thaumicbrewing.common.recipes.ModRecipes;
+
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import thaumcraft.api.ThaumcraftApi;
 import thaumcraft.api.aspects.AspectList;
 import thaumcraft.api.research.ResearchCategories;
-import com.verdantartifice.thaumicbrewing.common.recipes.ModRecipes;
 
 @Mod(modid = ThaumicBrewing.MODID, name = ThaumicBrewing.NAME, version = ThaumicBrewing.VERSION, dependencies = ThaumicBrewing.DEPENDENCIES)
 public class ThaumicBrewing
@@ -16,6 +20,14 @@ public class ThaumicBrewing
     public static final String NAME = "Thaumic Brewing";
     public static final String VERSION = "0.0.1";
     public static final String DEPENDENCIES = "required-after:thaumcraft";
+    
+    public static Logger LOGGER;
+    
+    @EventHandler
+    public void preInit(FMLPreInitializationEvent event)
+    {
+        LOGGER = event.getModLog();
+    }
 
     @EventHandler
     public void init(FMLInitializationEvent event)
