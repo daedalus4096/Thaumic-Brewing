@@ -55,6 +55,37 @@
                 }
             ],
             "addenda": []
+        },
+        {
+            "key": "TBREW_ADVANCED_POTIONS",
+            "name": "thaumicbrewing.research.advanced_potions.title",
+            "icons": ["minecraft:textures/items/potion_bottle_drinkable.png"],
+            "category": "THAUMIC_BREWING",
+            "parents": ["TBREW_BASIC_POTIONS"],
+            "siblings": [],
+            "meta": [],
+            "location": [4, 0],
+            "reward_item": [],
+            "reward_knowledge": [],
+            "stages": [
+                {
+                    "text": "thaumicbrewing.research.advanced_potions.text.stage.1",
+                    "required_item": [
+                        "minecraft:potion;1;0;{Potion:'minecraft:invisibility'}",
+                        "minecraft:potion;1;0;{Potion:'minecraft:leaping'}",
+                        "minecraft:potion;1;0;{Potion:'minecraft:regeneration'}"
+                    ]
+                },
+                {
+                    "text": "thaumicbrewing.research.advanced_potions.text.stage.2",
+                    "recipes": [
+                        "thaumicbrewing:invisibility_potion",
+                        "thaumicbrewing:leaping_potion",
+                        "thaumicbrewing:regeneration_potion"
+                    ]
+                }
+            ],
+            "addenda": []
         }
     ]
 }

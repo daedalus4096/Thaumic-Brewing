@@ -52,5 +52,23 @@ public class ModRecipes {
                 PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.WATER),
                 new AspectList().add(Aspect.AVERSION, 5).add(Aspect.ALCHEMY, 1)
         ));
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("thaumicbrewing", "invisibility_potion"), new CrucibleRecipe(
+                "TBREW_ADVANCED_POTIONS",
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.INVISIBILITY),
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.NIGHT_VISION),
+                new AspectList().add(Aspect.VOID, 5).add(Aspect.ALCHEMY, 1)
+        ));
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("thaumicbrewing", "leaping_potion"), new CrucibleRecipe(
+                "TBREW_ADVANCED_POTIONS",
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.LEAPING),
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.SWIFTNESS),
+                new AspectList().add(Aspect.FLIGHT, 5).add(Aspect.ALCHEMY, 1)
+        ));
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("thaumicbrewing", "regeneration_potion"), new CrucibleRecipe(
+                "TBREW_ADVANCED_POTIONS",
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.REGENERATION),
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.HEALING),
+                new AspectList().add(Aspect.ORDER, 5).add(Aspect.ALCHEMY, 1)
+        ));
     }
 }
