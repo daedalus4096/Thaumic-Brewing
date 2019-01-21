@@ -70,5 +70,29 @@ public class ModRecipes {
                 PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.HEALING),
                 new AspectList().add(Aspect.ORDER, 5).add(Aspect.ALCHEMY, 1)
         ));
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("thaumicbrewing", "slowness_potion"), new CrucibleRecipe(
+                "TBREW_HARMFUL_POTIONS",
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.SLOWNESS),
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.SWIFTNESS),
+                new AspectList().add(Aspect.ENTROPY, 5).add(Aspect.ALCHEMY, 1)
+        ));
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("thaumicbrewing", "harming_potion"), new CrucibleRecipe(
+                "TBREW_HARMFUL_POTIONS",
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.HARMING),
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.HEALING),
+                new AspectList().add(Aspect.ENTROPY, 5).add(Aspect.ALCHEMY, 1)
+        ));
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("thaumicbrewing", "poison_potion"), new CrucibleRecipe(
+                "TBREW_HARMFUL_POTIONS",
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.POISON),
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.REGENERATION),
+                new AspectList().add(Aspect.ENTROPY, 5).add(Aspect.ALCHEMY, 1)
+        ));
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("thaumicbrewing", "weakness_potion"), new CrucibleRecipe(
+                "TBREW_HARMFUL_POTIONS",
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.WEAKNESS),
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.STRENGTH),
+                new AspectList().add(Aspect.ENTROPY, 5).add(Aspect.ALCHEMY, 1)
+        ));
     }
 }

@@ -86,6 +86,40 @@
                 }
             ],
             "addenda": []
+        },
+        {
+            "key": "TBREW_HARMFUL_POTIONS",
+            "name": "thaumicbrewing.research.harmful_potions.title",
+            "icons": ["minecraft:textures/items/potion_bottle_drinkable.png"],
+            "category": "THAUMIC_BREWING",
+            "parents": ["TBREW_BASE", "~TBREW_ADVANCED_POTIONS"],
+            "siblings": [],
+            "meta": ["HIDDEN"],
+            "location": [-2, 0],
+            "reward_item": [],
+            "reward_knowledge": [],
+            "stages": [
+                {
+                    "text": "thaumicbrewing.research.harmful_potions.text.stage.1",
+                    "required_item": [
+                        "minecraft:potion;1;0;{Potion:'minecraft:slowness'}",
+                        "minecraft:potion;1;0;{Potion:'minecraft:harming'}",
+                        "minecraft:potion;1;0;{Potion:'minecraft:poison'}",
+                        "minecraft:potion;1;0;{Potion:'minecraft:weakness'}"
+                    ],
+                    "warp": 1
+                },
+                {
+                    "text": "thaumicbrewing.research.harmful_potions.text.stage.2",
+                    "recipes": [
+                        "thaumicbrewing:slowness_potion",
+                        "thaumicbrewing:harming_potion",
+                        "thaumicbrewing:poison_potion",
+                        "thaumicbrewing:weakness_potion"
+                    ]
+                }
+            ],
+            "addenda": []
         }
     ]
 }

@@ -11,3 +11,7 @@ thaumicbrewing.research.basic_potions.text.stage.2=Success!
 thaumicbrewing.research.advanced_potions.title=Advanced Potions
 thaumicbrewing.research.advanced_potions.text.stage.1=This will be some really cool text when it's not a placeholder.
 thaumicbrewing.research.advanced_potions.text.stage.2=Success!
+
+thaumicbrewing.research.harmful_potions.title=Debilitating Potions
+thaumicbrewing.research.harmful_potions.text.stage.1=This will be some really cool text when it's not a placeholder.
+thaumicbrewing.research.harmful_potions.text.stage.2=Success!
