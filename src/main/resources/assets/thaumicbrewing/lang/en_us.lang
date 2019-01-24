@@ -27,3 +27,15 @@ thaumicbrewing.research.strong_advanced_potions.text.stage.2=Success!
 thaumicbrewing.research.strong_harmful_potions.title=Powerful Debilitating Potions
 thaumicbrewing.research.strong_harmful_potions.text.stage.1=This will be some really cool text when it's not a placeholder.
 thaumicbrewing.research.strong_harmful_potions.text.stage.2=Success!
+
+thaumicbrewing.research.long_basic_potions.title=Extended Basic Potions
+thaumicbrewing.research.long_basic_potions.text.stage.1=This will be some really cool text when it's not a placeholder.
+thaumicbrewing.research.long_basic_potions.text.stage.2=Success!
+
+thaumicbrewing.research.long_advanced_potions.title=Extended Advanced Potions
+thaumicbrewing.research.long_advanced_potions.text.stage.1=This will be some really cool text when it's not a placeholder.
+thaumicbrewing.research.long_advanced_potions.text.stage.2=Success!
+
+thaumicbrewing.research.long_harmful_potions.title=Extended Debilitating Potions
+thaumicbrewing.research.long_harmful_potions.text.stage.1=This will be some really cool text when it's not a placeholder.
+thaumicbrewing.research.long_harmful_potions.text.stage.2=Success!

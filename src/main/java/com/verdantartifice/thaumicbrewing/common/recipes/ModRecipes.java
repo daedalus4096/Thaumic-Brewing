@@ -147,5 +147,77 @@ public class ModRecipes {
                 PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.POISON),
                 new AspectList().add(Aspect.ENERGY, 5).add(Aspect.ALCHEMY, 1)
         ));
+        
+        // Extended basic potion recipes
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("thaumicbrewing", "long_night_vision_potion"), new CrucibleRecipe(
+                "TBREW_LONG_BASIC_POTIONS",
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.LONG_NIGHT_VISION),
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.NIGHT_VISION),
+                new AspectList().add(Aspect.LIGHT, 5).add(Aspect.ALCHEMY, 1)
+        ));
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("thaumicbrewing", "long_fire_resistance_potion"), new CrucibleRecipe(
+                "TBREW_LONG_BASIC_POTIONS",
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.LONG_FIRE_RESISTANCE),
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.FIRE_RESISTANCE),
+                new AspectList().add(Aspect.LIGHT, 5).add(Aspect.ALCHEMY, 1)
+        ));
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("thaumicbrewing", "long_swiftness_potion"), new CrucibleRecipe(
+                "TBREW_LONG_BASIC_POTIONS",
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.LONG_SWIFTNESS),
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.SWIFTNESS),
+                new AspectList().add(Aspect.LIGHT, 5).add(Aspect.ALCHEMY, 1)
+        ));
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("thaumicbrewing", "long_water_breathing_potion"), new CrucibleRecipe(
+                "TBREW_LONG_BASIC_POTIONS",
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.LONG_WATER_BREATHING),
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.WATER_BREATHING),
+                new AspectList().add(Aspect.LIGHT, 5).add(Aspect.ALCHEMY, 1)
+        ));
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("thaumicbrewing", "long_strength_potion"), new CrucibleRecipe(
+                "TBREW_LONG_BASIC_POTIONS",
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.LONG_STRENGTH),
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.STRENGTH),
+                new AspectList().add(Aspect.LIGHT, 5).add(Aspect.ALCHEMY, 1)
+        ));
+
+        // Extended advanced potion recipes
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("thaumicbrewing", "long_invisibility_potion"), new CrucibleRecipe(
+                "TBREW_LONG_ADVANCED_POTIONS",
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.LONG_INVISIBILITY),
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.INVISIBILITY),
+                new AspectList().add(Aspect.LIGHT, 5).add(Aspect.ALCHEMY, 1)
+        ));
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("thaumicbrewing", "long_leaping_potion"), new CrucibleRecipe(
+                "TBREW_LONG_ADVANCED_POTIONS",
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.LONG_LEAPING),
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.LEAPING),
+                new AspectList().add(Aspect.LIGHT, 5).add(Aspect.ALCHEMY, 1)
+        ));
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("thaumicbrewing", "long_regeneration_potion"), new CrucibleRecipe(
+                "TBREW_LONG_ADVANCED_POTIONS",
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.LONG_REGENERATION),
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.REGENERATION),
+                new AspectList().add(Aspect.LIGHT, 5).add(Aspect.ALCHEMY, 1)
+        ));
+        
+        // Extended harmful potion recipes
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("thaumicbrewing", "long_slowness_potion"), new CrucibleRecipe(
+                "TBREW_LONG_HARMFUL_POTIONS",
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.LONG_SLOWNESS),
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.SLOWNESS),
+                new AspectList().add(Aspect.LIGHT, 5).add(Aspect.ALCHEMY, 1)
+        ));
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("thaumicbrewing", "long_poison_potion"), new CrucibleRecipe(
+                "TBREW_LONG_HARMFUL_POTIONS",
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.LONG_POISON),
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.POISON),
+                new AspectList().add(Aspect.LIGHT, 5).add(Aspect.ALCHEMY, 1)
+        ));
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("thaumicbrewing", "long_weakness_potion"), new CrucibleRecipe(
+                "TBREW_LONG_HARMFUL_POTIONS",
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.LONG_WEAKNESS),
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.WEAKNESS),
+                new AspectList().add(Aspect.LIGHT, 5).add(Aspect.ALCHEMY, 1)
+        ));
     }
 }

@@ -200,6 +200,90 @@
                 }
             ],
             "addenda": []
+        },
+        {
+            "key": "TBREW_LONG_BASIC_POTIONS",
+            "name": "thaumicbrewing.research.long_basic_potions.title",
+            "icons": ["minecraft:textures/items/potion_bottle_drinkable.png"],
+            "category": "THAUMIC_BREWING",
+            "parents": ["TBREW_BASIC_POTIONS"],
+            "siblings": [],
+            "meta": [],
+            "location": [3, 2],
+            "reward_item": [],
+            "reward_knowledge": [],
+            "stages": [
+                {
+                    "text": "thaumicbrewing.research.long_basic_potions.text.stage.1",
+                    "required_knowledge":["OBSERVATION;ALCHEMY;1", "THEORY;ALCHEMY;1"]
+                },
+                {
+                    "text": "thaumicbrewing.research.long_basic_potions.text.stage.2",
+                    "recipes": [
+                        "thaumicbrewing:long_night_vision_potion",
+                        "thaumicbrewing:long_fire_resistance_potion",
+                        "thaumicbrewing:long_swiftness_potion",
+                        "thaumicbrewing:long_water_breathing_potion",
+                        "thaumicbrewing:long_strength_potion"
+                    ]
+                }
+            ],
+            "addenda": []
+        },
+        {
+            "key": "TBREW_LONG_ADVANCED_POTIONS",
+            "name": "thaumicbrewing.research.long_advanced_potions.title",
+            "icons": ["minecraft:textures/items/potion_bottle_drinkable.png"],
+            "category": "THAUMIC_BREWING",
+            "parents": ["TBREW_ADVANCED_POTIONS"],
+            "siblings": [],
+            "meta": [],
+            "location": [5, 2],
+            "reward_item": [],
+            "reward_knowledge": [],
+            "stages": [
+                {
+                    "text": "thaumicbrewing.research.long_advanced_potions.text.stage.1",
+                    "required_knowledge":["OBSERVATION;ALCHEMY;1", "THEORY;ALCHEMY;1"]
+                },
+                {
+                    "text": "thaumicbrewing.research.long_advanced_potions.text.stage.2",
+                    "recipes": [
+                        "thaumicbrewing:long_invisibility_potion",
+                        "thaumicbrewing:long_leaping_potion",
+                        "thaumicbrewing:long_regeneration_potion"
+                    ]
+                }
+            ],
+            "addenda": []
+        },
+        {
+            "key": "TBREW_LONG_HARMFUL_POTIONS",
+            "name": "thaumicbrewing.research.long_harmful_potions.title",
+            "icons": ["minecraft:textures/items/potion_bottle_drinkable.png"],
+            "category": "THAUMIC_BREWING",
+            "parents": ["TBREW_HARMFUL_POTIONS"],
+            "siblings": [],
+            "meta": [],
+            "location": [-3, 2],
+            "reward_item": [],
+            "reward_knowledge": [],
+            "stages": [
+                {
+                    "text": "thaumicbrewing.research.long_harmful_potions.text.stage.1",
+                    "required_knowledge":["OBSERVATION;ALCHEMY;1", "THEORY;ALCHEMY;1"],
+                    "warp": 1
+                },
+                {
+                    "text": "thaumicbrewing.research.long_harmful_potions.text.stage.2",
+                    "recipes": [
+                        "thaumicbrewing:long_slowness_potion",
+                        "thaumicbrewing:long_poison_potion",
+                        "thaumicbrewing:long_weakness_potion"
+                    ]
+                }
+            ],
+            "addenda": []
         }
     ]
 }
