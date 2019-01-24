@@ -16,6 +16,7 @@ public class ModRecipes {
     }
     
     private static void initializeCrucibleRecipes() {
+        // Basic potion recipes
         ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("thaumicbrewing", "night_vision_potion"), new CrucibleRecipe(
                 "TBREW_BASIC_POTIONS",
                 PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.NIGHT_VISION),
@@ -52,6 +53,8 @@ public class ModRecipes {
                 PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.WATER),
                 new AspectList().add(Aspect.AVERSION, 5).add(Aspect.ALCHEMY, 1)
         ));
+        
+        // Advanced potion recipes
         ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("thaumicbrewing", "invisibility_potion"), new CrucibleRecipe(
                 "TBREW_ADVANCED_POTIONS",
                 PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.INVISIBILITY),
@@ -70,6 +73,8 @@ public class ModRecipes {
                 PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.HEALING),
                 new AspectList().add(Aspect.ORDER, 5).add(Aspect.ALCHEMY, 1)
         ));
+        
+        // Harmful potion recipes
         ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("thaumicbrewing", "slowness_potion"), new CrucibleRecipe(
                 "TBREW_HARMFUL_POTIONS",
                 PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.SLOWNESS),
@@ -93,6 +98,54 @@ public class ModRecipes {
                 PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.WEAKNESS),
                 PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.STRENGTH),
                 new AspectList().add(Aspect.ENTROPY, 5).add(Aspect.ALCHEMY, 1)
+        ));
+        
+        // Powerful basic potion recipes
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("thaumicbrewing", "strong_swiftness_potion"), new CrucibleRecipe(
+                "TBREW_STRONG_BASIC_POTIONS",
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.STRONG_SWIFTNESS),
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.SWIFTNESS),
+                new AspectList().add(Aspect.ENERGY, 5).add(Aspect.ALCHEMY, 1)
+        ));
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("thaumicbrewing", "strong_healing_potion"), new CrucibleRecipe(
+                "TBREW_STRONG_BASIC_POTIONS",
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.STRONG_HEALING),
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.HEALING),
+                new AspectList().add(Aspect.ENERGY, 5).add(Aspect.ALCHEMY, 1)
+        ));
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("thaumicbrewing", "strong_strength_potion"), new CrucibleRecipe(
+                "TBREW_STRONG_BASIC_POTIONS",
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.STRONG_STRENGTH),
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.STRENGTH),
+                new AspectList().add(Aspect.ENERGY, 5).add(Aspect.ALCHEMY, 1)
+        ));
+
+        // Powerful advanced potion recipes
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("thaumicbrewing", "strong_leaping_potion"), new CrucibleRecipe(
+                "TBREW_STRONG_ADVANCED_POTIONS",
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.STRONG_LEAPING),
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.LEAPING),
+                new AspectList().add(Aspect.ENERGY, 5).add(Aspect.ALCHEMY, 1)
+        ));
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("thaumicbrewing", "strong_regeneration_potion"), new CrucibleRecipe(
+                "TBREW_STRONG_ADVANCED_POTIONS",
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.STRONG_REGENERATION),
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.REGENERATION),
+                new AspectList().add(Aspect.ENERGY, 5).add(Aspect.ALCHEMY, 1)
+        ));
+        
+        // Powerful harmful potion recipes
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("thaumicbrewing", "strong_harming_potion"), new CrucibleRecipe(
+                "TBREW_STRONG_HARMFUL_POTIONS",
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.STRONG_HARMING),
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.HARMING),
+                new AspectList().add(Aspect.ENERGY, 5).add(Aspect.ALCHEMY, 1)
+        ));
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("thaumicbrewing", "strong_poison_potion"), new CrucibleRecipe(
+                "TBREW_STRONG_HARMFUL_POTIONS",
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.STRONG_POISON),
+                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.POISON),
+                new AspectList().add(Aspect.ENERGY, 5).add(Aspect.ALCHEMY, 1)
         ));
     }
 }

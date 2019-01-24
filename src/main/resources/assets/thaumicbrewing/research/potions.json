@@ -120,6 +120,86 @@
                 }
             ],
             "addenda": []
+        },
+        {
+            "key": "TBREW_STRONG_BASIC_POTIONS",
+            "name": "thaumicbrewing.research.strong_basic_potions.title",
+            "icons": ["minecraft:textures/items/potion_bottle_drinkable.png"],
+            "category": "THAUMIC_BREWING",
+            "parents": ["TBREW_BASIC_POTIONS"],
+            "siblings": [],
+            "meta": [],
+            "location": [3, -2],
+            "reward_item": [],
+            "reward_knowledge": [],
+            "stages": [
+                {
+                    "text": "thaumicbrewing.research.strong_basic_potions.text.stage.1",
+                    "required_knowledge":["OBSERVATION;ALCHEMY;1", "THEORY;ALCHEMY;1"]
+                },
+                {
+                    "text": "thaumicbrewing.research.strong_basic_potions.text.stage.2",
+                    "recipes": [
+                        "thaumicbrewing:strong_swiftness_potion",
+                        "thaumicbrewing:strong_healing_potion",
+                        "thaumicbrewing:strong_strength_potion"
+                    ]
+                }
+            ],
+            "addenda": []
+        },
+        {
+            "key": "TBREW_STRONG_ADVANCED_POTIONS",
+            "name": "thaumicbrewing.research.strong_advanced_potions.title",
+            "icons": ["minecraft:textures/items/potion_bottle_drinkable.png"],
+            "category": "THAUMIC_BREWING",
+            "parents": ["TBREW_ADVANCED_POTIONS"],
+            "siblings": [],
+            "meta": [],
+            "location": [5, -2],
+            "reward_item": [],
+            "reward_knowledge": [],
+            "stages": [
+                {
+                    "text": "thaumicbrewing.research.strong_advanced_potions.text.stage.1",
+                    "required_knowledge":["OBSERVATION;ALCHEMY;1", "THEORY;ALCHEMY;1"]
+                },
+                {
+                    "text": "thaumicbrewing.research.strong_advanced_potions.text.stage.2",
+                    "recipes": [
+                        "thaumicbrewing:strong_leaping_potion",
+                        "thaumicbrewing:strong_regeneration_potion"
+                    ]
+                }
+            ],
+            "addenda": []
+        },
+        {
+            "key": "TBREW_STRONG_HARMFUL_POTIONS",
+            "name": "thaumicbrewing.research.strong_harmful_potions.title",
+            "icons": ["minecraft:textures/items/potion_bottle_drinkable.png"],
+            "category": "THAUMIC_BREWING",
+            "parents": ["TBREW_HARMFUL_POTIONS"],
+            "siblings": [],
+            "meta": [],
+            "location": [-3, -2],
+            "reward_item": [],
+            "reward_knowledge": [],
+            "stages": [
+                {
+                    "text": "thaumicbrewing.research.strong_harmful_potions.text.stage.1",
+                    "required_knowledge":["OBSERVATION;ALCHEMY;1", "THEORY;ALCHEMY;1"],
+                    "warp": 1
+                },
+                {
+                    "text": "thaumicbrewing.research.strong_harmful_potions.text.stage.2",
+                    "recipes": [
+                        "thaumicbrewing:strong_harming_potion",
+                        "thaumicbrewing:strong_poison_potion"
+                    ]
+                }
+            ],
+            "addenda": []
         }
     ]
 }
