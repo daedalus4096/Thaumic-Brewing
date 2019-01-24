@@ -284,6 +284,56 @@
                 }
             ],
             "addenda": []
+        },
+        {
+            "key": "TBREW_SPLASH_POTIONS",
+            "name": "thaumicbrewing.research.splash_potions.title",
+            "icons": ["minecraft:textures/items/potion_bottle_splash.png"],
+            "category": "THAUMIC_BREWING",
+            "parents": ["TBREW_ADVANCED_POTIONS"],
+            "siblings": [],
+            "meta": [],
+            "location": [7, 0],
+            "reward_item": [],
+            "reward_knowledge": [],
+            "stages": [
+                {
+                    "text": "thaumicbrewing.research.splash_potions.text.stage.1",
+                    "required_knowledge":["OBSERVATION;ALCHEMY;1", "THEORY;ALCHEMY;1"]
+                },
+                {
+                    "text": "thaumicbrewing.research.splash_potions.text.stage.2",
+                    "recipes": [
+                        "thaumicbrewing:splash_potion_group"
+                    ]
+                }
+            ],
+            "addenda": []
+        },
+        {
+            "key": "TBREW_LINGERING_POTIONS",
+            "name": "thaumicbrewing.research.lingering_potions.title",
+            "icons": ["minecraft:textures/items/potion_bottle_lingering.png"],
+            "category": "THAUMIC_BREWING",
+            "parents": ["TBREW_SPLASH_POTIONS"],
+            "siblings": [],
+            "meta": [],
+            "location": [9, 0],
+            "reward_item": [],
+            "reward_knowledge": [],
+            "stages": [
+                {
+                    "text": "thaumicbrewing.research.lingering_potions.text.stage.1",
+                    "required_knowledge":["OBSERVATION;ALCHEMY;1", "THEORY;ALCHEMY;1"]
+                },
+                {
+                    "text": "thaumicbrewing.research.lingering_potions.text.stage.2",
+                    "recipes": [
+                        "thaumicbrewing:lingering_potion_group"
+                    ]
+                }
+            ],
+            "addenda": []
         }
     ]
 }

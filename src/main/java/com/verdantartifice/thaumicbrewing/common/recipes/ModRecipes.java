@@ -3,6 +3,7 @@ package com.verdantartifice.thaumicbrewing.common.recipes;
 import net.minecraft.init.Items;
 import net.minecraft.init.PotionTypes;
 import net.minecraft.item.ItemStack;
+import net.minecraft.potion.PotionType;
 import net.minecraft.potion.PotionUtils;
 import net.minecraft.util.ResourceLocation;
 import thaumcraft.api.ThaumcraftApi;
@@ -219,5 +220,32 @@ public class ModRecipes {
                 PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.WEAKNESS),
                 new AspectList().add(Aspect.LIGHT, 5).add(Aspect.ALCHEMY, 1)
         ));
+        
+        // Splash and lingering potion recipes
+        ResourceLocation splashPotionGroup = new ResourceLocation("thaumicbrewing", "splash_potion_group");
+        ResourceLocation lingeringPotionGroup = new ResourceLocation("thaumicbrewing", "lingering_potion_group");
+        PotionType[] supportedPotionTypes = { PotionTypes.NIGHT_VISION, PotionTypes.LONG_NIGHT_VISION, PotionTypes.INVISIBILITY,
+                PotionTypes.LONG_INVISIBILITY, PotionTypes.LEAPING, PotionTypes.LONG_LEAPING, PotionTypes.STRONG_LEAPING,
+                PotionTypes.FIRE_RESISTANCE, PotionTypes.LONG_FIRE_RESISTANCE, PotionTypes.SWIFTNESS, PotionTypes.LONG_SWIFTNESS,
+                PotionTypes.STRONG_SWIFTNESS, PotionTypes.SLOWNESS, PotionTypes.LONG_SLOWNESS, PotionTypes.WATER_BREATHING,
+                PotionTypes.LONG_WATER_BREATHING, PotionTypes.HEALING, PotionTypes.STRONG_HEALING, PotionTypes.HARMING,
+                PotionTypes.STRONG_HARMING, PotionTypes.POISON, PotionTypes.LONG_POISON, PotionTypes.STRONG_POISON,
+                PotionTypes.REGENERATION, PotionTypes.LONG_REGENERATION, PotionTypes.STRONG_REGENERATION, PotionTypes.STRENGTH,
+                PotionTypes.LONG_STRENGTH, PotionTypes.STRONG_STRENGTH, PotionTypes.WEAKNESS, PotionTypes.LONG_WEAKNESS };
+        for (PotionType potionType : supportedPotionTypes) {
+            String potionTypeName = potionType.getRegistryName().getResourcePath();
+            ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("thaumicbrewing", "splash_potion_" + potionTypeName), new CrucibleRecipe(
+                    "TBREW_SPLASH_POTIONS",
+                    PotionUtils.addPotionToItemStack(new ItemStack(Items.SPLASH_POTION), potionType),
+                    PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), potionType),
+                    new AspectList().add(Aspect.WATER, 5).add(Aspect.ALCHEMY, 1)
+            ).setGroup(splashPotionGroup));
+            ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("thaumicbrewing", "lingering_potion_" + potionTypeName), new CrucibleRecipe(
+                    "TBREW_LINGERING_POTIONS",
+                    PotionUtils.addPotionToItemStack(new ItemStack(Items.LINGERING_POTION), potionType),
+                    PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), potionType),
+                    new AspectList().add(Aspect.SOUL, 5).add(Aspect.ALCHEMY, 1)
+            ).setGroup(lingeringPotionGroup));
+        }
     }
 }
