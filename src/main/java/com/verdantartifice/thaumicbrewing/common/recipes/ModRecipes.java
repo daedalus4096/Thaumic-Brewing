@@ -10,10 +10,28 @@ import thaumcraft.api.ThaumcraftApi;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
 import thaumcraft.api.crafting.CrucibleRecipe;
+import thaumcraft.api.research.ResearchCategories;
 
 public class ModRecipes {
     public static void initializeRecipes() {
         initializeCrucibleRecipes();
+    }
+    
+    /**
+     * The research JSON loader doesn't appear to recognize any NBT data in the icon field, so for potions they have to be set manually.
+     */
+    public static void tweakResearchIcons() {
+        ResearchCategories.getResearch("TBREW_BASIC_POTIONS").setIcons(new Object[] { PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.HEALING) });
+        ResearchCategories.getResearch("TBREW_ADVANCED_POTIONS").setIcons(new Object[] { PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.INVISIBILITY) });
+        ResearchCategories.getResearch("TBREW_HARMFUL_POTIONS").setIcons(new Object[] { PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.HARMING) });
+        ResearchCategories.getResearch("TBREW_STRONG_BASIC_POTIONS").setIcons(new Object[] { PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.STRONG_STRENGTH) });
+        ResearchCategories.getResearch("TBREW_STRONG_ADVANCED_POTIONS").setIcons(new Object[] { PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.STRONG_LEAPING) });
+        ResearchCategories.getResearch("TBREW_STRONG_HARMFUL_POTIONS").setIcons(new Object[] { PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.STRONG_POISON) });
+        ResearchCategories.getResearch("TBREW_LONG_BASIC_POTIONS").setIcons(new Object[] { PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.LONG_SWIFTNESS) });
+        ResearchCategories.getResearch("TBREW_LONG_ADVANCED_POTIONS").setIcons(new Object[] { PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.LONG_REGENERATION) });
+        ResearchCategories.getResearch("TBREW_LONG_HARMFUL_POTIONS").setIcons(new Object[] { PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.LONG_WEAKNESS) });
+        ResearchCategories.getResearch("TBREW_SPLASH_POTIONS").setIcons(new Object[] { PotionUtils.addPotionToItemStack(new ItemStack(Items.SPLASH_POTION), PotionTypes.HEALING) });
+        ResearchCategories.getResearch("TBREW_LINGERING_POTIONS").setIcons(new Object[] { PotionUtils.addPotionToItemStack(new ItemStack(Items.LINGERING_POTION), PotionTypes.HEALING) });
     }
     
     private static void initializeCrucibleRecipes() {
