@@ -19,7 +19,7 @@ public class ThaumicBrewing
 {
     public static final String MODID = "thaumicbrewing";
     public static final String NAME = "Thaumic Brewing";
-    public static final String VERSION = "0.0.1";
+    public static final String VERSION = "1.0.0";
     public static final String DEPENDENCIES = "required-after:thaumcraft";
     
     public static Logger LOGGER;
