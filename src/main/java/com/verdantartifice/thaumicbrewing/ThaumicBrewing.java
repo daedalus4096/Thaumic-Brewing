@@ -17,7 +17,7 @@ import thaumcraft.api.research.ResearchCategories;
 @Mod(modid = ThaumicBrewing.MODID, name = ThaumicBrewing.NAME, version = ThaumicBrewing.VERSION, dependencies = ThaumicBrewing.DEPENDENCIES)
 public class ThaumicBrewing
 {
-    public static final String MODID = "thaumic-brewing";
+    public static final String MODID = "thaumicbrewing";
     public static final String NAME = "Thaumic Brewing";
     public static final String VERSION = "0.0.1";
     public static final String DEPENDENCIES = "required-after:thaumcraft";

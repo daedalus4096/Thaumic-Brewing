@@ -1,6 +1,6 @@
 [
 {
-  "modid": "thaumic-brewing",
+  "modid": "thaumicbrewing",
   "name": "Thaumic Brewing",
   "description": "Make potions using alchemy!",
   "version": "${version}",

@@ -23,8 +23,8 @@ repositories {
 }
 
 version = "0.0.1"
-group = "com.verdantartifice.thaumic-brewing" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "thaumic-brewing"
+group = "com.verdantartifice.thaumicbrewing" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "thaumicbrewing"
 
 sourceCompatibility = targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 compileJava {
