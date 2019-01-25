@@ -2,13 +2,13 @@
 {
   "modid": "thaumic-brewing",
   "name": "Thaumic Brewing",
-  "description": "Simple learning mod",
+  "description": "Make potions using alchemy!",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
   "authorList": ["Verdus"],
-  "credits": "",
+  "credits": "Thanks to Azanor for Thaumcraft.",
   "logoFile": "",
   "screenshots": [],
   "dependencies": ["thaumcraft"]
