@@ -1,3 +1,3 @@
 # Thaumic Brewing
 
-Make potions using alchemy!
+Make potions using Thaumcraft 6 alchemy!
