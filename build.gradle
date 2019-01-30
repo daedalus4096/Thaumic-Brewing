@@ -22,7 +22,7 @@ repositories {
     }
 }
 
-version = "1.0.0"
+version = "1.0.2"
 group = "com.verdantartifice.thaumicbrewing" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "thaumicbrewing"
 
@@ -32,7 +32,7 @@ compileJava {
 }
 
 minecraft {
-    version = "1.12.2-14.23.5.2768"
+    version = "1.12.2-14.23.5.2808"
     runDir = "run"
     
     // the mappings can be changed at any time, and must be in the following format.
