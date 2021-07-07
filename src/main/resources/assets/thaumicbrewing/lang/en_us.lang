@@ -17,8 +17,8 @@ thaumicbrewing.research.harmful_potions.text.stage.1=Like thaumaturgy, brewing h
 thaumicbrewing.research.harmful_potions.text.stage.2=As I suspected, a simple inversion of effect using Perditio essentia was enough to turn helpful potions into debilitating ones.  Not that I'd recommend actually drinking any of them.
 
 thaumicbrewing.research.strong_basic_potions.title=Powerful Basic Potions
-thaumicbrewing.research.strong_basic_potions.text.stage.1=Brewing allows for several types of potions to be given an enhanced effect with the addition of redstone dust.  Perhaps that amplification process can be reproduced alchemically as well.
-thaumicbrewing.research.strong_basic_potions.text.stage.2=A splash of Potentia did the trick.  That shouldn't surprise me, given how chock full of the stuff redstone is, but I confess that I'd expected it to be a bit more... complicated.
+thaumicbrewing.research.strong_basic_potions.text.stage.1=Brewing allows for several types of potions to be given an enhanced effect with the addition of glowstone dust.  Perhaps that amplification process can be reproduced alchemically as well.
+thaumicbrewing.research.strong_basic_potions.text.stage.2=A splash of Potentia did the trick.  That shouldn't surprise me, given how chock full of the stuff glowstone is, but I confess that I'd expected it to be a bit more... complicated.
 
 thaumicbrewing.research.strong_advanced_potions.title=Powerful Advanced Potions
 thaumicbrewing.research.strong_advanced_potions.text.stage.1=I wonder if advanced potions can have their effects amplified in the same way that basic potions can.  This warrants further experimentation.
@@ -29,8 +29,8 @@ thaumicbrewing.research.strong_harmful_potions.text.stage.1=Can my debilitating 
 thaumicbrewing.research.strong_harmful_potions.text.stage.2=For better or worse, these foul concoctions are even more potent than before.
 
 thaumicbrewing.research.long_basic_potions.title=Extended Basic Potions
-thaumicbrewing.research.long_basic_potions.text.stage.1=Several types of brewed potions can have the duration of their effects extended by adding some glowstone dust to the mix.  How do I recreate that with alchemy?
-thaumicbrewing.research.long_basic_potions.text.stage.2=Strangely enough, Lux essentia was the answer.  I wouldn't have expected it to have time-related effects, but then again it is found in the glowstone that brewing uses.  Perhaps there's some unseen connection between the two arts.
+thaumicbrewing.research.long_basic_potions.text.stage.1=Several types of brewed potions can have the duration of their effects extended by adding some redstone dust to the mix.  How do I recreate that with alchemy?
+thaumicbrewing.research.long_basic_potions.text.stage.2=Strangely enough, Lux essentia was the answer.  I wouldn't have expected it to have time-related effects, but then again it is found in the redstone that brewing uses.  Perhaps there's some unseen connection between the two arts.
 
 thaumicbrewing.research.long_advanced_potions.title=Extended Advanced Potions
 thaumicbrewing.research.long_advanced_potions.text.stage.1=It stands to reason that if basic potions can have their effects extended, then advanced potions should as well.  Only one way to find out.
